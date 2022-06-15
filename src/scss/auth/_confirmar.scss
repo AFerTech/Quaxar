@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.confirmar {
+    margin-top: 5rem;
+    .logo {
+        @include m.textoDegradado(v.$blanco);
+    }
+    .acciones {
+        justify-content: center;
+        a {
+            color: v.$indigo;
+        }
+    }
+}
